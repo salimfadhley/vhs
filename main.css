@@ -1,5 +1,8 @@
 body {
-    background-image: url(outrun_bg.jpg);
+    background-image: url(outrun_mountains.png);
+    background-repeat: space;
+    background-position: bottom center;
+    background-color: black;
 }
 
 .top_row{
