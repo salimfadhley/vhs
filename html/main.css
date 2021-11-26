@@ -27,6 +27,7 @@ body {
     height: 500px;
     display: flex;
     justify-content: center;
+
 }
 
 .gareth {
@@ -45,28 +46,77 @@ body {
 .nick {
     position: relative;
 }
+/*===================*/
+/* WOOBLE VERTICAL
+/*===================*/
 
-@-webkit-keyframes wobble {
-    0% { -webkit-transform: translateX(0%); }
-    15% { -webkit-transform: translateX(-25%) rotate(-5deg); }
-    30% { -webkit-transform: translateX(20%) rotate(3deg); }
-    45% { -webkit-transform: translateX(-15%) rotate(-3deg); }
-    60% { -webkit-transform: translateX(10%) rotate(2deg); }
-    75% { -webkit-transform: translateX(-5%) rotate(-1deg); }
-    100% { -webkit-transform: translateX(0%); }
+@-webkit-keyframes wobble-vertical-on-hover {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
-@keyframes wobble {
-    0% { transform: translateX(0%); }
-    15% { transform: translateX(-25%) rotate(-5deg); }
-    30% { transform: translateX(20%) rotate(3deg); }
-    45% { transform: translateX(-15%) rotate(-3deg); }
-    60% { transform: translateX(10%) rotate(2deg); }
-    75% { transform: translateX(-5%) rotate(-1deg); }
-    100% { transform: translateX(0%); }
+@keyframes wobble-vertical-on-hover {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: scale(1.1);
+    }
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: scale(1.05);
+    }
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: scale(1.15);
+    }
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: scale(0.95);
+    }
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: scale(1.0);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
-
-.wobble {
-    -webkit-animation-name: wobble;
-    animation-name: wobble;
+.wobble-vertical-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble-vertical-on-hover:hover, .wobble-vertical-on-hover:focus, .wobble-vertical-on-hover:active {
+    -webkit-animation-name: wobble-vertical-on-hover;
+    animation-name: wobble-vertical-on-hover;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
