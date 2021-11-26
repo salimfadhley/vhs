@@ -2,6 +2,33 @@ body {
     background-image: url(outrun_bg.jpg);
 }
 
+.vhs {
+    background-image: url(vhs.png);
+    height: 338px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-20deg);
+
+}
+
+.label {
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    top: 50%;
+    float: bottom;
+    text-align: center;
+    color: deeppink;
+    /*padding: 50px;*/
+}
+
+.label_text_lage {
+    font-size: x-large;
+}
+.label_text_small {
+}
+
 .column {
     float: left;
     /*width: 33.33%;*/
@@ -23,14 +50,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
 }
 
-.vhs {
-    background-image: url(vhs.png);
-    height: 338px;
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    transform: rotate(-20deg);
-}
+
 .cast {
     height: 500px;
     display: flex;
