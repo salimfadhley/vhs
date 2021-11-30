@@ -1,8 +1,23 @@
 body {
-    background-image: url(outrun_mountains.png);
-    background-repeat: space;
-    background-position: bottom center;
+    background-image: url(night_sky.jpeg);
+    background-repeat: no-repeat;
+    background-position: top center;
     background-color: black;
+    border-width: 0;
+
+}
+
+.mountains {
+    background-image: url(outrun_mountains.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /*background-color: green;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*border-color: deeppink;*/
 }
 
 .top_row{
